@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "../assets/style/deposit.scss";
 import { Form, Spinner, Image } from "react-bootstrap"
 import { Dai, Usdt, Usdc, Ethereum, Btc } from 'react-web3-icons';
-import toIcn from "../assets/images/logo.png"
+import toIcn from "../assets/images/favicon.ico"
 import { IoMdWallet } from "react-icons/io"
 import { FaEthereum } from "react-icons/fa"
 import { useAccount, useConnect, useNetwork, useSwitchNetwork, useBalance, useToken } from 'wagmi'
