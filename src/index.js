@@ -13,8 +13,8 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 export const RACE = {
     id: Number(process.env.REACT_APP_L2_CHAIN_ID),
-    name: "RACE Testnet",
-    network: "RACE",
+    name: "Avail OP Testnet",
+    network: "Optimium",
     iconUrl: "https://i.imgur.com/Q3oIdip.png",
     iconBackground: "#000000",
     nativeCurrency: {
@@ -28,7 +28,7 @@ export const RACE = {
         },
     },
     blockExplorers: {
-        default: { name: "RACE Testnet Explorer", url: process.env.REACT_APP_L2_EXPLORER_URL }
+        default: { name: "Avail OP Testnet Explorer", url: process.env.REACT_APP_L2_EXPLORER_URL }
     },
     testnet: true
 
@@ -46,7 +46,7 @@ const { chains, publicClient } = configureChains(
 export const connectors = [
     new MetaMaskConnector({
         chains,
-        options : {
+        options: {
             shimDisconnect: false,
         }
     }),
