@@ -7,7 +7,7 @@ The `op-Bridge` is a service for op-stack chains which provides a functional UI 
 Clone this repo
 
 ```
-git clone https://github.com/nitantchhajed/op-stack-bridge.git
+git clone https://github.com/RISHABHAGRAWALZRA/avail-op-stack-bridge.git
 
 yarn 
 ```
@@ -15,8 +15,6 @@ yarn
 ## Running the service
 
 Copy `.env.example` into a new file named `.env`, then set the environment variables listed there.
-
-
 
 Once your environment variables or flags have been set, run the service via:
 
@@ -26,16 +24,22 @@ yarn start
 
 ## What this service does
 
-The `op-bridge` uses the @eth-optimism/sdk https://sdk.optimism.io/ to provide the bridgining functionality by using CrossChainMessenger. It provides the Deposit and withdraw functionality.
+The `op-bridge` uses the @eth-optimism/sdk <https://sdk.optimism.io/> to provide the bridgining functionality by using CrossChainMessenger. It provides the Deposit and withdraw functionality.
 
 ## Tutorial
 
 ### Deposits
 
 The Deposit process is an easy one step process which Bridges the Assets from L1(Sepolia) to L2 layer.
+
 - go the the deposit page, choose your asset and initiate the deposit process.
 
-![image](https://github.com/nitantchhajed/op-stack-bridge/assets/96972634/7fc12271-838d-4948-a276-d400b92bee4c)
+<div align="center">
+  <br />
+  <br />
+  <a href="https://github.com/availproject/avail-op-stack-bridge"><img alt="Avail OP Bridge deposit" src="src/assets/images/img-1.png" width=1000></a>
+  <br />
+</div>
 
 ### Withdrawal
 
@@ -47,20 +51,27 @@ Withdrawal is an three step process
 
 --------------------------------------------------------------------------------------------------
 
-- Initiate the withdrawal on L2 
+- Initiate the withdrawal on L2
 
-![image](https://github.com/nitantchhajed/op-stack-bridge/assets/96972634/2a6a0af7-4175-4cdb-a351-e211e32454ab)
-
+<div align="center">
+  <br />
+  <br />
+  <a href="https://github.com/availproject/avail-op-stack-bridge"><img alt="Avail OP Bridge withdraw" src="src/assets/images/img-2.png" width=1000></a>
+  <br />
+</div>
 
 - View your withdrawals from Account section -
 
- ![image](https://github.com/nitantchhajed/op-stack-bridge/assets/96972634/7b0d1c73-4636-4c7f-8c27-e92b503a3e7a)
-
+<div align="center">
+  <br />
+  <br />
+  <a href="https://github.com/availproject/avail-op-stack-bridge"><img alt="Avail OP Bridge withdraw" src="src/assets/images/img-3.png" width=1000></a>
+  <br />
+</div>
 
 - You will see that your withdrwal status is `Waiting for Confirmation` which means your state root is not published yet
 
 ![image](https://github.com/nitantchhajed/op-stack-bridge/assets/96972634/8688f68b-a005-4177-acf3-8e5bbd78acf4)
-
 
 - After your state root is published you can see the status change to `Prove` Buttom
 
@@ -72,11 +83,4 @@ Withdrawal is an three step process
 
 - After you Claim the Withdrawal on L1 the withdrawal process is fully completed.
 
-** NOTE - Refresh the page to see the status changes
-
-
-### Please Give a star and Follow if you liked the Application.
-
-Thank you !!!
-
-
+**NOTE - Refresh the page to see the status changes**
